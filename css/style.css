@@ -114,17 +114,17 @@ a>#logoTop{
         width: 100%;
         border-radius: 5px;
         position: fixed; 
-        top: 10%;
+        top: 10.5%;
         justify-content: center;
         right: 0%;
     }
 
     #gallery{
-        top: 15.5%;
+        top: 16.5%;
     }
 
     #contact{
-        top: 21%;
+        top: 22.5%;
     }
 
     #toggle-button{
