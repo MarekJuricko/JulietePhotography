@@ -8,6 +8,7 @@
 /* position of header */
 .header{
     background-color: whitesmoke;
+    box-shadow: 1px 1px 10px gray;
     position: absolute;
     top: 0px;
     height: 7.5%;
@@ -115,12 +116,12 @@ a>#logoTop{
     }
 
     .btn>a{
-        color: rgb(230, 230, 230);
+        color: rgb(250, 250, 250);
     }
 
     #home,#bio,#gallery,#contact{
-        background-color: rgb(245, 245, 245);
-        background-color: rgba(245, 245, 245, 0.5);
+        background-color: rgb(195, 195, 195);
+        background-color: rgba(195, 195, 195, 0.95);
         width: 100%;
         border: 1px solid black;
         border-radius: 0px;
@@ -158,30 +159,30 @@ a>#logoTop{
 /* Updating size of buttons in navBar*/
 @media(min-width: 2000px){
     .btn>a{
-        font-size: 20px;
+        font-size: 17.5px;
     }  
 }
 
 @media(min-width: 2400px){
     .btn>a{
-        font-size: 25px;
+        font-size: 20px;
     }  
 }
 
 @media(min-width: 2800px){
     .btn>a{
-        font-size: 30px;
+        font-size: 25px;
     }  
 }
 
 @media(min-width: 3200px){
     .btn>a{
-        font-size: 35px;
+        font-size: 30px;
     }  
 }
 
 @media(min-width: 3600px){
     .btn>a{
-        font-size: 40px;
+        font-size: 35px;
     }  
 }
