@@ -235,6 +235,13 @@
 
 
 /* positions of icons,bottom info when width is wider */
+@media(min-width: 1000px){
+    .bottomInfo{
+        left: 44%;
+        font-size: 15px;
+    }
+}
+
 @media(min-width: 1100px){
     .bottomInfo{
         left: 44%;
