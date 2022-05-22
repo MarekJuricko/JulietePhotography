@@ -10,7 +10,7 @@
     background-color: whitesmoke;
     position: absolute;
     top: 0px;
-    height: 70px;
+    height: 7.5%;
     width: 100%;
 }
 
@@ -40,7 +40,7 @@
 }
 
 a>#logoTop{
-    height: 70px;
+    height: 90%;
     width: auto;
     margin-top: 150px;
     margin: 1px 50px;
@@ -51,7 +51,7 @@ a>#logoTop{
     left: 15%;  
 }
 
-/* pappearance of button */
+/* appearance of button */
 .btn{
     padding: 12.5px;
     margin: 10px auto;
@@ -63,7 +63,7 @@ a>#logoTop{
     text-align: center;
 }
 
-/* pappearance of text in button (link) */
+/* appearance of text in button (link) */
 .btn>a{
     padding: 5px;
     margin: 0 30px;
@@ -154,3 +154,34 @@ a>#logoTop{
     }
 }
 
+
+/* Updating size of buttons in navBar*/
+@media(min-width: 2000px){
+    .btn>a{
+        font-size: 20px;
+    }  
+}
+
+@media(min-width: 2400px){
+    .btn>a{
+        font-size: 25px;
+    }  
+}
+
+@media(min-width: 2800px){
+    .btn>a{
+        font-size: 30px;
+    }  
+}
+
+@media(min-width: 3200px){
+    .btn>a{
+        font-size: 35px;
+    }  
+}
+
+@media(min-width: 3600px){
+    .btn>a{
+        font-size: 40px;
+    }  
+}
