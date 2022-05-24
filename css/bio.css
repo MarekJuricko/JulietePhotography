@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid black;
+}
+
+.cover{
+    background-color: rgb(225, 225, 225);
+    box-shadow: 3px 3px 10px gray;
+    padding: 250px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/main/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto; 
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.profilePic{
+    background-image: url(../images/bio/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%; 
+    background-position: -115px -40px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+.profileName{
+    margin-top: 10px;
+    margin-left: 125px;
+}
+
+.socials{
+    margin-top: 5px;
+    margin-left: 185px;
+}
+
+.socialIcons{
+    margin-top: 7.5px;
+    margin-left: 162px;
+}
+
+.socialLink{
+    display: inline-block;
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+#instaLink{
+    left: 450px;
+}
