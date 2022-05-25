@@ -23,39 +23,55 @@
     background-image: url(../images/bio/profilePic.jpg);
     background-repeat: no-repeat;
     background-size: 200%; 
-    background-position: -115px -40px;
+    background-position: -90px -40px;
     overflow: hidden;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 100px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 150px;
 }
 
 .profileName{
     margin-top: 10px;
-    margin-left: 125px;
+    margin-left: 105px;
 }
 
 .socials{
     margin-top: 5px;
-    margin-left: 185px;
+    margin-left: 165px;
 }
 
 .socialIcons{
     margin-top: 7.5px;
-    margin-left: 162px;
+    margin-left: 142px;
 }
 
 .socialLink{
     display: inline-block;
     list-style: none;
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
+    height: 25px;
+    width: 25px;
+    margin-left: 22.5px;
+    margin-bottom: 100px;
 }
 
 #instaLink{
     left: 450px;
+}
+
+#contentRight{
+    margin-top: -450px;
+    margin-left: 440px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+#contentRight>h1{
+    font-size: 50px;
+}
+
+#contentRight>p{
+    font-size: 25px;
 }
