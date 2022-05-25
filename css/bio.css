@@ -5,6 +5,7 @@
     outline: 0px solid black;
 }
 
+/* position and appearance for cover on top */
 .cover{
     background-color: rgb(225, 225, 225);
     box-shadow: 3px 3px 10px gray;
@@ -19,6 +20,7 @@
     text-align: center;
 }
 
+/* position and appearance for content on left side */
 .profilePic{
     background-image: url(../images/bio/profilePic.jpg);
     background-repeat: no-repeat;
@@ -57,6 +59,7 @@
     margin-bottom: 100px;
 }
 
+/* position and appearance for content on right side */
 #contentRight{
     margin-top: -450px;
     margin-left: 440px;
@@ -73,6 +76,7 @@
 }
 
 
+/* positions and appearance of left and right size when narrowed */
 @media(max-width: 1000px){
     .profilePic,.profileName{
         margin-left: 40%;
