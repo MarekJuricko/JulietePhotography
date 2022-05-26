@@ -8,8 +8,7 @@ body{
 
 footer{
     background-color: inherit;
-    border: 1px solid rgb(200, 200, 200);
-    box-shadow: -1px -1px 10px rgb(200, 200, 200);
+    box-shadow: -1px -1px 5px rgb(200, 200, 200);
     padding-top: 15px;
     position: sticky;
     top: 90%;
@@ -22,7 +21,6 @@ footer{
     height: 12%;
     position: sticky;
     margin-top: -5px;
-    margin-bottom: 40px;
     margin-left: -15px;
 }
 
@@ -80,15 +78,18 @@ footer{
     top: 93%;
     text-align: center;
     font-size: 14px;
+    color: gray;
+    margin-top: 40px;
 }
 
 .bottomLink{
     text-decoration: none;
-    color: black;
+    color: gray;
 }
 
 .bottomLink:hover{
     text-decoration: underline;
+    color: rgb(150, 150, 150);
 }
 
 #MJLink{
@@ -345,6 +346,7 @@ footer{
     }
 
     .bottomInfo{
+        margin-top: 50px;
         left: 46.5%;
         font-size: 20px;
     }
@@ -357,6 +359,7 @@ footer{
     }
 
     .bottomInfo{
+        margin-top: 75px;
         left: 46.5%;
         font-size: 22px;
     }
