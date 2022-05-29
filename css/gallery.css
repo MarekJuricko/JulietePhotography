@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(35, 35, 35);
+    outline: 0px solid white;
+}
+/* position and appearance of links */
+#galleryLinks{
+    width: 80%;
+    padding: 10% 15%;
+    text-decoration: none;
+    list-style: none;
+}
+
+#galleryLinks>a{
+    text-decoration: none;
+}
+
+.galleryLink{
+    border: 2px solid whitesmoke;
+    background-position: center;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 15px 15px;
+}
+
+.galleryLink:hover{
+    animation: turn 1.5s 1;  
+    transform: rotate(20deg); 
+}
+
+/* turning animation when hover */
+@keyframes turn{
+    from { 
+        transform: rotate(0deg); 
+    } 
+
+    50%{
+        max-width: 30%;
+        max-height: 30%;
+    }
+
+    to{
+        transform: rotate(20deg);
+    }
+}
+
+/* responsivity attributes */
+@media(max-width: 4500px){
+    #galleryLinks{
+        padding-left: 22.5%;
+        padding-right: 0%;
+    }
+
+    .galleryLink{
+        max-height: 600px;
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 4000px){
+    #galleryLinks{
+        padding-left: 23.5%;
+        padding-right: 0%;
+    }
+
+    .galleryLink{
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 3500px){
+    #galleryLinks{
+        padding-left: 22.5%;
+    }
+
+    .galleryLink{
+        max-height: 450px;
+        max-width: 450px;
+    }
+}
+
+@media(max-width: 2600px){
+    #galleryLinks{
+        padding-left: 24%;
+    }
+
+    .galleryLink{
+        max-height: 400px;
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 2320px){
+    #galleryLinks{
+        padding-left: 22.5%;
+    }
+
+    .galleryLink{
+        max-height: 350px;
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 2000px){
+    #galleryLinks{
+        padding-left: 24%;
+    }
+
+    .galleryLink{
+        max-height: 300px;
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 1820px){
+    #galleryLinks{
+        padding-left: 22.5%;
+    }
+}
+
+@media(max-width: 1735px){
+    #galleryLinks{
+        padding-left: 19%;
+    }
+
+    .galleryLink{
+        max-height: 275px;
+        max-width: 275px;
+    }
+}
+
+@media(max-width: 1550px){
+    #galleryLinks{
+        padding-left: 29.5%;
+    }
+}
+
+@media(max-width: 1440px){
+    #galleryLinks{
+        padding-left: 20%;
+    }
+
+    .galleryLink{
+        max-height: 250px;
+        max-width: 250px;
+    }
+}
+
+@media(max-width: 1325px){
+    #galleryLinks{
+        padding-left: 18.5%;
+    }
+
+    .galleryLink{
+        max-height: 225px;
+        max-width: 225px;
+    }
+}
+
+@media(max-width: 1250px){
+    #galleryLinks{
+        padding-left: 29.5%;
+    }
+}
+
+@media(max-width: 1100px){
+    #galleryLinks{
+        padding-left: 25%;
+    }
+}
+
+@media(max-width: 1000px){
+    #galleryLinks{
+        padding-left: 26.5%;
+    }
+
+    .galleryLink{
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 900px){
+    #galleryLinks{
+        padding-left: 24%;
+    }
+}
+
+@media(max-width: 830px){
+    #galleryLinks{
+        padding-left: 24%;
+    }
+
+    .galleryLink{
+        max-height: 175px;
+        max-width: 175px;
+    }
+}
+
+@media(max-width: 800px){
+    #galleryLinks{
+        padding-left: 24%;
+    }
+}
+
+@media(max-width: 750px){
+    #galleryLinks{
+        padding-left: 20%;
+    }
+}
+
+@media(max-width: 690px){
+    #galleryLinks{
+        padding-left: 35%;
+    }
+}
+
+@media(max-width: 600px){
+    #galleryLinks{
+        padding-left: 34%;
+    }
+
+    .galleryLink{
+        max-height: 150px;
+        max-width: 150px;
+    }
+}
+
+@media(max-width: 500px){
+    #galleryLinks{
+        padding-top: 100px;
+        padding-left: 30%;
+    }
+
+    .galleryLink{
+        max-height: 125px;
+        max-width: 125px;
+    }
+}
+
+@media(max-width: 300px){
+    #galleryLinks{
+        padding-top: 50px;
+        padding-left: 21%;
+    }
+}
