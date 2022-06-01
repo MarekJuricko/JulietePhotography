@@ -15,6 +15,23 @@
     width: 100%;
 }
 
+/* position of button backToGallery + appearance of button */
+#backToGallery{
+    position: absolute;
+    top: 0%;
+    margin-left: 5%;
+    display: block;
+}
+
+#backToGallery>a{
+    background: transparent;
+    color: rgb(110, 110, 110);
+}
+
+#backToGallery>a:hover{
+    color: rgb(160, 160, 160);
+}
+
 /* position of buttons: bio,gallery,contact + position of logo */
 #home{
     position: absolute;
