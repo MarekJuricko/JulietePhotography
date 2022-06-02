@@ -1,0 +1,326 @@
+/* position of main div and arrows*/
+#imgPreview{
+    padding-top: 17.5%;
+}
+
+#arrows{
+    padding: 1% 0;
+    margin-top: 0vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* position and appearance of arrows*/
+.arrow{
+    position: relative;
+    font-size: 75px;
+    margin-top: -12.5%;
+    padding: 30vh 25px;
+    color: gray;
+    background-color: rgb(35, 35, 35);
+    background-color: rgba(35, 35, 35, 0.5);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray,1px -1px 2px gray,-1px 1px 2px gray;
+    cursor: pointer; 
+    overflow: hidden;
+}
+
+.arrow:hover{
+    animation: enlight 1s 1;
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px whitesmoke,-1px -1px 5px whitesmoke;
+    box-shadow:  1px -1px 5px whitesmoke,-1px 1px 5px whitesmoke;
+}
+
+/* animation enlight - box-shadow goes lighter, then goes back*/
+@keyframes enlight{
+    20%{
+        box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
+        box-shadow:  1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
+    }
+    40%{
+        box-shadow: 1px 1px 10px whitesmoke, -1px -1px 10px whitesmoke;
+        box-shadow:  1px -1px 10px whitesmoke, -1px 1px 10px whitesmoke;
+    }
+    60%{
+        box-shadow: 1px 1px 15px white, -1px -1px 15px white;
+        box-shadow:  1px -1px 15px white, -1px 1px 15px white;
+    }
+    80%{
+        box-shadow: 1px 1px 10px whitesmoke, -1px -1px 10px whitesmoke;
+        box-shadow:  1px -1px 10px whitesmoke, -1px 1px 10px whitesmoke;
+    }
+    100%{
+        box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
+        box-shadow:  1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
+    }
+}
+
+/* position of arrowPrevious and arrowNext button*/
+#arrowPrevious{
+    margin-right: 42.5%;
+}
+
+#arrowNext{
+    margin-left: 42.5%;
+}
+
+/* position and appearnace of preview image*/
+#preview{
+    display: flex;
+    justify-content: center;
+    margin-top: -77vh;
+    margin-left: 11%;
+    z-index: 5;
+    width: auto;
+    height: auto;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+    padding-bottom: 80vh;
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
+    box-shadow: 1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
+    background-image: url(../images/main/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* position and appearance of removeActive button*/
+#removeActive{
+    position: absolute;
+    top: 0.25%;
+    right: 0.5%;
+    padding: 0px 12px;
+    font-size: 50px;
+    color: grey;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#removeActive:hover{
+    animation: box 0.5s 1;
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px whitesmoke, 2px -2px 5px whitesmoke;
+    box-shadow: -2px 2px 5px whitesmoke, 2px -2px 5px whitesmoke;
+}
+
+/* animation box - box-shadow circling around*/
+@keyframes box{
+    0%{
+        box-shadow: 2px 2px 5px whitesmoke;
+    }
+    14%{
+        box-shadow: 2px -2px 5px whitesmoke;
+    }
+    38%{
+        box-shadow: -2px -2px 5px whitesmoke;
+    }
+    52%{
+        box-shadow: -2px 2px 5px whitesmoke;
+    }
+    64%{
+        box-shadow: 2px 2px 5px whitesmoke;
+    }
+    78%{
+        box-shadow: 2px -2px 5px whitesmoke;
+    }
+    90%{
+        box-shadow: -2px -2px 5px whitesmoke;
+    }
+    100%{
+        box-shadow: -2px 2px 5px whitesmoke;
+    }
+}
+
+/* preparation for eventListeners in JS*/
+#preview,#arrowPrevious,#arrowNext,#removeActive{
+    display: non;
+}
+
+.active{
+    display: flex;
+}
+
+/* attributes when website is narrowed*/
+@media(max-width: 3840px){
+    #preview{
+        margin-top: -72.5vh;
+    }
+    .arrow{
+        margin-top: -10%;
+    }
+    #removeActive{
+        font-size: 75px;
+    }
+}
+
+@media(max-width: 3440px){
+    #preview{
+        margin-top: -75.5vh;
+    }
+    .arrow{
+        margin-top: -12.5%;
+    }
+}
+
+@media(max-width: 2560px){
+    #preview{
+        margin-top: -77vh;
+    }
+    .arrow{
+        margin-top: -10%;
+    }
+    #removeActive{
+        font-size: 65px;
+    }
+}
+
+@media(max-width: 1920px){
+    #preview{
+        margin-top: -81vh;
+    }
+    #removeActive{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 1500px){
+    #preview{
+        margin-top: -75vh;
+    }
+    .arrow{
+        margin-top: -10%;
+    }
+    #removeActive{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 1200px){
+    #preview{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .arrow{
+        color: rgb(245, 245, 245);
+        color: rgba(245, 245, 245, 0.75);
+    }
+    #arrowPrevious{
+        margin-right: 40%;
+    }
+    #arrowNext{
+        margin-left: 40%;
+    }
+}
+
+@media(max-width: 900px){
+    #preview{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    #arrowPrevious{
+        margin-right: 35%;
+    }
+    #arrowNext{
+        margin-left: 35%;
+    }
+}
+
+@media(max-width: 800px){
+    #preview{
+        margin-top: -75vh;
+    }
+    .arrow{
+        font-size: 60px;
+        margin-top: -7.5%;
+    }
+    #removeActive{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 700px){
+    #preview{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #arrowPrevious{
+        margin-right: 35.5%;
+    }
+    #arrowNext{
+        margin-left: 35.5%;
+    }
+}
+
+@media(max-width: 600px){
+    #preview{
+        margin-top: -75vh;
+    }
+    .arrow{
+        margin-top: -5%;
+    }
+}
+
+@media(max-width: 500px){
+    #preview{
+        margin-top: -40vh;
+    }
+    .arrow{
+        padding: 0 5px;
+        font-size: 45px;
+        margin-top: 50%;
+    }
+    #arrowPrevious{
+        margin-right: 32%;
+    }
+    #arrowNext{
+        margin-left: 32%;
+    }
+}
+
+@media(max-width: 400px){
+    #preview{
+        margin-top: -40vh;
+    }
+    .arrow{
+        margin-top: 50%;
+    }
+    #removeActive{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 350px){
+    #preview{
+        margin-top: -48vh;
+    }
+    .arrow{
+        margin-top: 100%;
+    }
+    #arrowPrevious{
+        margin-right: 25%;
+    }
+    #arrowNext{
+        margin-left: 25%;
+    }
+    #removeActive{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 300px){
+    #preview{
+        margin-top: -47vh;
+    }
+    .arrow{
+        margin-top: 90%;
+    }
+    #removeActive{
+        font-size: 30px;
+    }
+}
+
+
