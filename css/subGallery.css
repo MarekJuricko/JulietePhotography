@@ -1,4 +1,4 @@
-/* position of main div and arrows*/
+/* position of preview image div and arrows*/
 #imgPreview{
     padding-top: 17.5%;
 }
@@ -135,9 +135,49 @@
     }
 }
 
+
+/* position and appearance of gallery*/
+#galleryImages{
+    margin-top: 150px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.galleryImg{
+    max-height: auto;
+    max-width: 500px;
+    border: 1px solid whitesmoke;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* lowering margin in bottom of site when too wide*/
+@media(min-width: 800px){
+   #galleryImages{
+       margin-bottom: -150px;
+   }
+}
+
+@media(min-width: 1500px){
+    #galleryImages{
+        margin-bottom: -200px;
+    }
+}
+
+@media(min-width: 2000px){
+    #galleryImages{
+        margin-bottom: -400px;
+    }
+}
+
 /* preparation for eventListeners in JS*/
 #preview,#arrowPrevious,#arrowNext,#removeActive{
-    display: non;
+    display: none;
 }
 
 .active{
@@ -185,6 +225,9 @@
     #removeActive{
         font-size: 50px;
     }
+    .galleryImg{
+        max-width: 400px;
+    }
 }
 
 @media(max-width: 1500px){
@@ -196,6 +239,9 @@
     }
     #removeActive{
         font-size: 45px;
+    }
+    .galleryImg{
+        max-width: 300px;
     }
 }
 
@@ -226,6 +272,9 @@
     }
     #arrowNext{
         margin-left: 35%;
+    }
+    .galleryImg{
+        max-width: 250px;
     }
 }
 
@@ -278,6 +327,9 @@
     }
     #arrowNext{
         margin-left: 32%;
+    }
+    .galleryImg{
+        max-width: 200px;
     }
 }
 
