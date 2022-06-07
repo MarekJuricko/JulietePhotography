@@ -1,6 +1,6 @@
 /* position of preview image div and arrows*/
 #imgPreview{
-    padding-top: 17.5%;
+    padding-top: 0vh;
 }
 
 #arrows{
@@ -80,7 +80,7 @@
     border: 1px solid whitesmoke;
     box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
     box-shadow: 1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
-    background-image: url(../images/main/background5.jpg);
+    background-image: url(../images/gallery/sub-gallery1/sub-gallery1_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -159,59 +159,51 @@
 /* lowering margin in bottom of site when too wide*/
 @media(min-width: 800px){
    #galleryImages{
-       margin-bottom: -150px;
+       margin-bottom: 25px;
    }
 }
 
 @media(min-width: 1500px){
     #galleryImages{
-        margin-bottom: -200px;
+        margin-bottom: 50px;
     }
 }
 
 @media(min-width: 2000px){
     #galleryImages{
-        margin-bottom: -400px;
+        margin-bottom: 100px;
     }
 }
 
 /* preparation for eventListeners in JS*/
-#preview,#arrowPrevious,#arrowNext,#removeActive{
+.non-active{
     display: none;
 }
 
 .active{
-    display: flex;
+    display: block;
 }
 
 /* attributes when website is narrowed*/
 @media(max-width: 3840px){
     #preview{
-        margin-top: -72.5vh;
+        margin-top: -75vh;
     }
     .arrow{
-        margin-top: -10%;
+        margin-top: 0vh;
+        font-size: 75px;
     }
     #removeActive{
         font-size: 75px;
     }
 }
 
-@media(max-width: 3440px){
-    #preview{
-        margin-top: -75.5vh;
-    }
-    .arrow{
-        margin-top: -12.5%;
-    }
-}
-
 @media(max-width: 2560px){
     #preview{
-        margin-top: -77vh;
+        margin-top: -76vh;
     }
     .arrow{
-        margin-top: -10%;
+        margin-top: -5vh;
     }
     #removeActive{
         font-size: 65px;
@@ -220,7 +212,10 @@
 
 @media(max-width: 1920px){
     #preview{
-        margin-top: -81vh;
+        margin-top: -77vh;
+    }
+    .arrow{
+        margin-top: -7.5vh;
     }
     #removeActive{
         font-size: 50px;
@@ -230,27 +225,16 @@
     }
 }
 
-@media(max-width: 1500px){
+@media(max-width: 1280px){
     #preview{
-        margin-top: -75vh;
-    }
-    .arrow{
-        margin-top: -10%;
-    }
-    #removeActive{
-        font-size: 45px;
-    }
-    .galleryImg{
-        max-width: 300px;
-    }
-}
-
-@media(max-width: 1200px){
-    #preview{
+        margin-top: -50vh;
         margin-left: 5%;
         margin-right: 5%;
     }
     .arrow{
+        margin-top: 20vh;
+        padding: 0 20px;
+        font-size: 75px;
         color: rgb(245, 245, 245);
         color: rgba(245, 245, 245, 0.75);
     }
@@ -264,8 +248,13 @@
 
 @media(max-width: 900px){
     #preview{
+        margin-top: -47vh;
         margin-left: 2.5%;
         margin-right: 2.5%;
+    }
+    .arrow{
+        margin-top: 25vh;
+        font-size: 60px;
     }
     #arrowPrevious{
         margin-right: 35%;
@@ -280,11 +269,11 @@
 
 @media(max-width: 800px){
     #preview{
-        margin-top: -75vh;
+        margin-top: -47vh;
     }
     .arrow{
+        margin-top: 25vh;
         font-size: 60px;
-        margin-top: -7.5%;
     }
     #removeActive{
         font-size: 40px;
@@ -293,8 +282,12 @@
 
 @media(max-width: 700px){
     #preview{
+        margin-top: -44vh;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    .arrow{
+        margin-top: 25vh;
     }
     #arrowPrevious{
         margin-right: 35.5%;
@@ -306,21 +299,21 @@
 
 @media(max-width: 600px){
     #preview{
-        margin-top: -75vh;
+        margin-top: -45.5vh;
     }
     .arrow{
-        margin-top: -5%;
+        margin-top: 30vh;
+        padding: 0 5px;
+        font-size: 45px;
     }
 }
 
 @media(max-width: 500px){
     #preview{
-        margin-top: -40vh;
+        margin-top: -45vh;
     }
     .arrow{
-        padding: 0 5px;
-        font-size: 45px;
-        margin-top: 50%;
+        margin-top: 30vh;
     }
     #arrowPrevious{
         margin-right: 32%;
@@ -335,10 +328,10 @@
 
 @media(max-width: 400px){
     #preview{
-        margin-top: -40vh;
+        margin-top: -45vh;
     }
     .arrow{
-        margin-top: 50%;
+        margin-top: 30vh;
     }
     #removeActive{
         font-size: 35px;
@@ -347,10 +340,10 @@
 
 @media(max-width: 350px){
     #preview{
-        margin-top: -48vh;
+        margin-top: -45vh;
     }
     .arrow{
-        margin-top: 100%;
+        margin-top: 30vh;
     }
     #arrowPrevious{
         margin-right: 25%;
@@ -365,10 +358,10 @@
 
 @media(max-width: 300px){
     #preview{
-        margin-top: -47vh;
+        margin-top: -45vh;
     }
     .arrow{
-        margin-top: 90%;
+        margin-top: 30vh;
     }
     #removeActive{
         font-size: 30px;
