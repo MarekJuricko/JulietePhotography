@@ -5,6 +5,7 @@ const preview = document.querySelector("#preview")
 const removeActive = document.querySelector("#removeActive")
 const arrowPrevious = document.querySelector("#arrowPrevious")
 const arrowNext = document.querySelector("#arrowNext")
+const allGalleryImg = Array.from(galleryImg)
 let path
 let previousPath
 let nextPath
@@ -24,12 +25,27 @@ function showHide(){
 function showPreviewImg(){
     preview.style.backgroundImage = `url(${path})`
 
-    previousPath = event.path[0].previousElementSibling.currentSrc
-    nextPath = event.path[0].nextElementSibling.currentSrc
-
-    console.log(nextPath)
 }
 
+
+function check(){
+    let t
+
+    try{
+        for(let i = 0; i <= allGalleryImg.length; i++){
+            t = allGalleryImg[i].currentSrc.includes(path)
+            if(t == false){
+                continue
+            }else{
+                previousPath = allGalleryImg[i].previousElementSibling.currentSrc
+                path = allGalleryImg[i].currentSrc
+                nextPath = allGalleryImg[i].nextElementSibling.currentSrc
+            }
+        }
+    }catch(e){
+    }
+
+}
 
 
 
@@ -37,9 +53,16 @@ galleryImages.addEventListener("click", function(event){
     showHide()
     path = event.target.currentSrc
     showPreviewImg()
+    check()
+
+    if(previousPath === undefined){
+        previousPath = allGalleryImg[allGalleryImg.length-1].currentSrc
+    }
+
+    if(nextPath === undefined){
+        nextPath = allGalleryImg[1].currentSrc
+    }
 })
-
-
 
 
 removeActive.addEventListener("click", function(event){
@@ -47,18 +70,28 @@ removeActive.addEventListener("click", function(event){
 })
 
 
-
-
 arrowPrevious.addEventListener("click", function(event){
+    check()
+    nextPath = path
     path = previousPath
+
     showPreviewImg()
-    console.log(previousPath)
+    
+    if(allGalleryImg[0].currentSrc = path){
+        previousPath = allGalleryImg[allGalleryImg.length-1].currentSrc
+        nextPath = allGalleryImg[1].currentSrc
+    }
 })
 
 
-
-
 arrowNext.addEventListener("click", function(event){
+    check()
+    previousPath = path
     path = nextPath
     showPreviewImg()
+    
+    if(allGalleryImg[allGalleryImg.length-1].currentSrc = path){
+        nextPath = allGalleryImg[0].currentSrc
+        previousPath = allGalleryImg[allGalleryImg.length-2].currentSrc
+    }
 })
