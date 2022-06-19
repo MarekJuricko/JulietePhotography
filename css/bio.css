@@ -15,7 +15,7 @@
     width: 100%;
     background-image: url(../images/main/background2.jpg);
     background-repeat: no-repeat;
-    background-size: auto; 
+    background-size: cover; 
     background-position: center;
     overflow: hidden;
     text-align: center;
@@ -79,9 +79,13 @@
 
 /* positions and appearance of left and right size when narrowed */
 @media(max-width: 1000px){
-    .profilePic,.profileName{
-        margin-left: 40%;
-        margin-right: 40%;
+    .profilePic{
+        margin-inline: auto;
+    }
+
+    .profileName{
+        margin-left: 10px;
+        text-align: center;
     }
 
     .socials,.socialIcons,.socialLink{
@@ -90,33 +94,15 @@
 
     #contentRight{
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 0%;
         margin-bottom: 50px;
         text-align: center;
     }
 }
 
-@media(max-width: 900px){
-    .profilePic,.profileName{
-        margin-left: 37.5%;
-        margin-right: 37.5%;
-    }
-}
-
-@media(max-width: 700px){
-    .profilePic,.profileName{
-        margin-left: 35%;
-        margin-right: 35%;
-    }
-}
 
 @media(max-width: 600px){
-    .profilePic,.profileName{
-        margin-left: 32.5%;
-        margin-right: 32.5%;
-    }
-
     #contentRight>h1{
         font-size: 40px;
     }
@@ -127,9 +113,8 @@
 }
 
 @media(max-width: 500px){
-    .profilePic,.profileName{
-        margin-left: 30%;
-        margin-right: 30%;
+    .cover{
+        padding: 200px;
     }
 
     #contentRight>h1{
@@ -142,9 +127,19 @@
 }
 
 @media(max-width: 400px){
-    .profilePic,.profileName{
-        margin-left: 22%;
-        margin-right: 22%;
+    .profilePic{
+        margin-top: 40px;
+        width: 150px;
+        height: 150px;
+        background-position: -65px -35px;
+    }
+
+    .profileName{
+        font-size: 25px;
+    }
+
+    .cover{
+        padding: 150px;
     }
 
     #contentRight{
@@ -153,5 +148,11 @@
         margin-left: 0%;
         margin-bottom: 50px;
         text-align: center;
+    }
+}
+
+@media(max-width: 300px){
+    .cover{
+        padding: 100px;
     }
 }
