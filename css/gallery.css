@@ -19,6 +19,7 @@
 
 .galleryLink{
     border: 2px solid whitesmoke;
+    border-radius: 15px;
     background-position: center;
     max-height: 300px;
     max-width: 300px;
@@ -28,6 +29,8 @@
 .galleryLink:hover{
     animation: turn 1.5s 1;  
     transform: rotate(20deg); 
+    box-shadow: 1px 1px 2.5px whitesmoke, -1px -1px 2.5px whitesmoke;
+    box-shadow:  1px -1px 2.5px whitesmoke, -1px 1px 2.5px whitesmoke;
 }
 
 /* turning animation when hover */
@@ -36,13 +39,24 @@
         transform: rotate(0deg); 
     } 
 
-    50%{
+    30%{
         max-width: 30%;
         max-height: 30%;
     }
 
-    to{
+    60%{
         transform: rotate(20deg);
+        border-radius: 5px;
+    }
+
+    90%{
+        box-shadow: 1px 1px 15px whitesmoke, -1px -1px 15px whitesmoke;
+        box-shadow:  1px -1px 15px whitesmoke, -1px 1px 15px whitesmoke;
+    }
+
+    to{
+        box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
+        box-shadow:  1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
     }
 }
 
