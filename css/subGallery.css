@@ -82,7 +82,7 @@
     box-shadow: 1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
     background-image: url(../images/gallery/sub-gallery1/sub-gallery1_1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -149,12 +149,19 @@
 }
 
 .galleryImg{
-    max-height: auto;
-    max-width: 500px;
-    border: 1px solid whitesmoke;
+    max-height: 500px;
+    max-width: auto;
+
+    border: 1px solid silver;
+    border-radius: 5px;
     margin: 5px;
     cursor: pointer;
 }
+
+.vertical{
+    margin: 0 70%;
+}
+
 
 /* lowering margin in bottom of site when too wide*/
 @media(min-width: 800px){
