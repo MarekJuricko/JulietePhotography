@@ -30,6 +30,9 @@ function showPreviewImg(){
 
 
 function check(){
+    console.log(previousPath)
+    console.log(path)
+    console.log(nextPath)
     let t
 
     try{
@@ -41,11 +44,23 @@ function check(){
                 previousPath = allGalleryImg[i].previousElementSibling.currentSrc
                 path = allGalleryImg[i].currentSrc
                 nextPath = allGalleryImg[i].nextElementSibling.currentSrc
+                console.log(previousPath)
+                console.log(path)
+                console.log(nextPath)
             }
         }
     }catch(e){
     }
 
+    if(path === allGalleryImg[0].currentSrc){
+        previousPath = allGalleryImg[allGalleryImg.length-1].currentSrc
+        nextPath = allGalleryImg[1].currentSrc
+    }
+
+    if(path === allGalleryImg[allGalleryImg.length-1].currentSrc){
+        previousPath = allGalleryImg[allGalleryImg.length-2].currentSrc
+        nextPath = allGalleryImg[0].currentSrc
+    }
 }
 
 
@@ -55,14 +70,6 @@ galleryImages.addEventListener("click", function(event){
     path = event.target.currentSrc
     showPreviewImg()
     check()
-
-    if(previousPath === undefined){
-        previousPath = allGalleryImg[allGalleryImg.length-1].currentSrc
-    }
-
-    if(nextPath === undefined){
-        nextPath = allGalleryImg[1].currentSrc
-    }
 })
 
 
@@ -75,13 +82,7 @@ arrowPrevious.addEventListener("click", function(event){
     check()
     nextPath = path
     path = previousPath
-
     showPreviewImg()
-    
-    if(allGalleryImg[0].currentSrc = path){
-        previousPath = allGalleryImg[allGalleryImg.length-1].currentSrc
-        nextPath = allGalleryImg[1].currentSrc
-    }
 })
 
 
@@ -90,9 +91,4 @@ arrowNext.addEventListener("click", function(event){
     previousPath = path
     path = nextPath
     showPreviewImg()
-    
-    if(allGalleryImg[allGalleryImg.length-1].currentSrc = path){
-        nextPath = allGalleryImg[0].currentSrc
-        previousPath = allGalleryImg[allGalleryImg.length-2].currentSrc
-    }
 })
