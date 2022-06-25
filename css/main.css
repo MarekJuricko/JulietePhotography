@@ -163,6 +163,10 @@ h1{
         left: 7.5%;
         width: 85%;
     }
+
+    h1{
+        font-size: 90px;
+    }
 }
 
 @media(max-width: 1000px){
