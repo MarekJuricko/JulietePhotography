@@ -16,6 +16,7 @@ window.onload = function start(){
 }
 
 function showHide(){
+    window.scrollTo(top)
     galleryImages.classList.toggle("active")
     galleryImg.forEach(x => x.classList.toggle("non-active"))
     imgPreview.classList.toggle("active")
