@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     background-color: whitesmoke;
-    outline: 0px solid black;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-style: italic;
 }
 
 /* position and appearance for cover on top */

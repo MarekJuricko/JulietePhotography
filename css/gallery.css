@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(35, 35, 35);
-    outline: 0px solid white;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-style: italic;
 }
 /* position and appearance of links */
 #galleryLinks{

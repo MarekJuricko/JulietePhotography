@@ -1,3 +1,8 @@
+*{
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-style: italic;
+}
+
 .cover{
     background-color: rgb(225, 225, 225);
     box-shadow: 3px 3px 10px gray;
