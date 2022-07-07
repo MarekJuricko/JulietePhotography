@@ -14,6 +14,7 @@
 .arrow{
     position: relative;
     font-size: 75px;
+    font-style: normal;
     margin-top: -12.5%;
     padding: 30vh 25px;
     color: gray;
@@ -93,6 +94,7 @@
     right: 0.5%;
     padding: 0px 12px;
     font-size: 50px;
+    font-style: normal;
     color: grey;
     border: 1px solid grey;
     cursor: pointer;

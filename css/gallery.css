@@ -6,6 +6,7 @@
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     font-style: italic;
 }
+
 /* position and appearance of links */
 #galleryLinks{
     width: 80%;
@@ -257,6 +258,10 @@
 }
 
 @media(max-width: 300px){
+    #galleryLinks{
+        margin-top: 25px;
+    }
+
     #galleryLinks{
         padding-top: 50px;
         padding-left: 21%;
