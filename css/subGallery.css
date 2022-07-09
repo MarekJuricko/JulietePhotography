@@ -147,7 +147,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .galleryImg{
@@ -187,10 +186,12 @@
 /* preparation for eventListeners in JS*/
 .non-active{
     display: none;
+    animation: none;
 }
 
 .active{
     display: block;
+    animation: none;
 }
 
 /* attributes when website is narrowed*/
