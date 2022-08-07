@@ -153,6 +153,17 @@
     }
 }
 
+@media(max-width: 1415px){
+    #galleryLinks{
+        padding-left: 18%;
+    }
+
+    .galleryLink{
+        max-height: 235px;
+        max-width: 235px;
+    }
+}
+
 @media(max-width: 1325px){
     #galleryLinks{
         padding-left: 18.5%;
@@ -164,7 +175,7 @@
     }
 }
 
-@media(max-width: 1250px){
+@media(max-width: 1260px){
     #galleryLinks{
         padding-left: 29.5%;
     }
