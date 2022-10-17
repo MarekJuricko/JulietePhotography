@@ -8,7 +8,7 @@
     box-shadow: 3px 3px 10px gray;
     position: absolute;
     top: 13%;
-    height: 69%;
+    height: 70%;
     width: 100%;
     max-width: 100%;
     color: white;
@@ -17,9 +17,9 @@
 #photos{
     position: absolute;
     top: 1%;
-    left: 5%;
+    left: 1%;
     height: 98%;
-    width: 90%;
+    width: 98%;
     background-image: url(../images/main/background1.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto; 
@@ -84,164 +84,9 @@
 
 h1{
     animation: appear 10s 1;
-    font-size: 75px;
+    font-size: clamp(1.5625rem, 0.504rem + 6.0484vw, 15.625rem);
     font-weight: bold;
     text-shadow: 2px 2px 1px black, 3px 3px 1px black, 4px 4px 1px black, 5px 5px 1px black, 6px 6px 1px black;
     line-height: 65vh;
     text-align: center;
-}
-
-@media(max-width: 4000px){
-    #photos{
-        left: 5%;
-        width: 90%;
-    }
-
-    h1{
-        font-size: 150px;
-    }
-}
-
-@media(max-width: 3500px){
-    #photos{
-        left: 5%;
-        width: 90%;
-    }
-
-    h1{
-        font-size: 140px;
-    }
-}
-
-@media(max-width: 3000px){
-    #photos{
-        left: 5%;
-        width: 90%;
-    }
-
-    h1{
-        font-size: 120px;
-    }
-}
-
-@media(max-width: 2500px){
-    #photos{
-        left: 5%;
-        width: 90%;
-    }
-
-    h1{
-        font-size: 120px;
-    }
-}
-
-@media(max-width: 2100px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-}
-
-@media(max-width: 1500px){
-    #photos{
-        left: 9%;
-        width: 82%;
-    }
-
-    h1{
-        font-size: 100px;
-    }
-}
-
-@media(max-width: 1400px){
-    #photos{
-        left: 10%;
-        width: 80%;
-    }
-}
-
-@media(max-width: 1300px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-}
-
-@media(max-width: 1200px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-    h1{
-        font-size: 95px;
-    }
-}
-
-@media(max-width: 1100px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-
-    h1{
-        font-size: 85px;
-    }
-}
-
-@media(max-width: 1000px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-
-    h1{
-        font-size: 70px;
-    }
-}
-
-@media(max-width: 800px){
-    #photos{
-        left: 7.5%;
-        width: 85%;
-    }
-
-    h1{
-        font-size: 60px;
-    }
-}
-
-@media(max-width: 700px){
-    h1{
-        font-size: 50px;
-    }
-}
-
-@media(max-width: 600px){
-    h1{
-        font-size: 40px;
-    }
-}
-
-@media(max-width: 500px){
-    h1{
-        font-size: 37.5px;
-    }
-}
-
-@media(max-width: 450px){
-    h1{
-        font-size: 30px;
-    }
-}
-
-@media(max-width: 355px){
-    h1{
-        font-size: 25px;
-    }
-}
-
-@media(max-width: 300px){
-    h1{
-        font-size: 20px;
-    }
 }
