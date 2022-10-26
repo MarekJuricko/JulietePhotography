@@ -176,7 +176,9 @@ a>#logoTop{
 
     #contact{
         margin-top: 174px;
-        height: 75.5vh;
+        height: calc(100vh - 170px);
+        margin-bottom: 75px;
+        overflow: hidden;
     }
 
     #toggle-button{
