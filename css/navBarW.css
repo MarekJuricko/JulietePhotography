@@ -86,7 +86,7 @@ a>#logoTop{
 .btn>a{
     padding: 5px;
     margin: 0 30px;
-    font-size: 15px;
+    font-size: clamp(0.9375rem, 0.6038rem + 0.5085vw, 1.875rem);
     font-weight: bold;
     color: rgb(110, 110, 110);
     text-shadow: 0px 0px 0px gray;
@@ -191,36 +191,4 @@ a>#logoTop{
         left: 0%;
         padding: auto;
     }
-}
-
-
-/* Updating size of buttons in navBar*/
-@media(min-width: 2000px){
-    .btn>a{
-        font-size: 17.5px;
-    }  
-}
-
-@media(min-width: 2400px){
-    .btn>a{
-        font-size: 20px;
-    }  
-}
-
-@media(min-width: 2800px){
-    .btn>a{
-        font-size: 25px;
-    }  
-}
-
-@media(min-width: 3200px){
-    .btn>a{
-        font-size: 30px;
-    }  
-}
-
-@media(min-width: 3600px){
-    .btn>a{
-        font-size: 35px;
-    }  
 }
