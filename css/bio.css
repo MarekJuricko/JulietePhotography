@@ -12,7 +12,7 @@
         margin-top: -30%;
     }
     100%{
-        margin-top: 0%;
+        margin-top: 75px;
     }
 }
 
@@ -21,10 +21,11 @@
     animation: slideDown 1s 1;
     background-color: rgb(225, 225, 225);
     box-shadow: 3px 3px 10px gray;
-    padding: 250px;
+    margin-top: 75px;
+    padding: clamp(5vh, 10vh, 15vh);
     height: 100%;
     width: 100%;
-    background-image: url(../images/main/background2.jpg);
+    background-image: url(../images/main/background10.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -48,8 +49,9 @@
 }
 
 .profileName{
+    font-size: clamp(1.5625rem, 1.4803rem + 0.6579vw, 3.125rem);
     margin-top: 10px;
-    margin-left: 105px;
+    margin-left: 92.5px;
 }
 
 .socials{
@@ -65,26 +67,26 @@
 .socialLink{
     display: inline-block;
     list-style: none;
-    height: 25px;
-    width: 25px;
+    height: clamp(15px, 25px, 30px);
+    width: clamp(15px, 25px, 30px);
     margin-left: 22.5px;
     margin-bottom: 100px;
 }
 
 /* position and appearance for content on right side */
 #contentRight{
-    margin-top: -450px;
+    margin-top: -475px;
     margin-left: 440px;
     margin-right: 150px;
     margin-bottom: 50px;
 }
 
 #contentRight>h1{
-    font-size: 50px;
+    font-size: clamp(1.5625rem, 1.4803rem + 0.6579vw, 3.125rem);
 }
 
 #contentRight>p{
-    font-size: 25px;
+    font-size: clamp(0.625rem, 0.5428rem + 0.6579vw, 2.1875rem);
 }
 
 
@@ -92,6 +94,7 @@
 @media(max-width: 1000px){
     .profilePic{
         margin-inline: auto;
+        margin-top: 20px;
     }
 
     .profileName{
@@ -104,66 +107,10 @@
     }
 
     #contentRight{
-        width: 100%;
+        width: 90%;
         margin-top: 30px;
-        margin-left: 0%;
+        margin-left: 5%;
         margin-bottom: 50px;
         text-align: center;
-    }
-}
-
-
-@media(max-width: 600px){
-    #contentRight>h1{
-        font-size: 40px;
-    }
-    
-    #contentRight>p{
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 500px){
-    .cover{
-        padding: 200px;
-    }
-
-    #contentRight>h1{
-        font-size: 35px;
-    }
-    
-    #contentRight>p{
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 400px){
-    .profilePic{
-        margin-top: 40px;
-        width: 150px;
-        height: 150px;
-        background-position: -65px -35px;
-    }
-
-    .profileName{
-        font-size: 25px;
-    }
-
-    .cover{
-        padding: 150px;
-    }
-
-    #contentRight{
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0%;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-}
-
-@media(max-width: 300px){
-    .cover{
-        padding: 100px;
     }
 }
