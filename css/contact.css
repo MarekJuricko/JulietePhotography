@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(245, 245, 245);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
 
 /* position of main container*/
 #container{
+    margin-top: 100px;
     padding: 5% 5% 15% 5%;
     display: block;
     justify-content: center;
@@ -42,14 +43,23 @@
 #contentLeft{
     animation: appear 5s 1;
     font-size: 25px;
-    margin-right: 45%;
-    margin-top: 190px;  
+    padding-left: 10%;
+    margin-right: 45%; 
+}
+
+#contentLeft>#title{
+    font-size: clamp(1.5625rem, 1.4474rem + 0.9211vw, 3.75rem);
+}
+
+#contentLeft>p{
+    font-size: clamp(0.625rem, 0.5592rem + 0.5263vw, 1.875rem);
 }
 
 #contentRight{
     animation: slideRight 2.5s 1;
+    font-size: clamp(0.375rem, 0.2961rem + 0.6316vw, 1.875rem);
     margin-left: 65%;
-    margin-top: -250px;
+    margin-top: -125px;
     justify-content: center;
     align-items: center;
 }
@@ -61,165 +71,8 @@
 
 /* position and appearance for link icon */
 .contactLink{
-    width: 25px;
+    width: clamp(0.625rem, 0.5263rem + 0.7895vw, 2.5rem);
     margin-top: 25px;
     margin-bottom: -5px;
     margin-right: 5px;
-}
-
-/* apperaance of container in different size*/
-@media(max-width: 4000px){
-    #contentLeft,#contentRight{
-        margin-top: 10%;
-    }
-
-    #contentLeft{
-        font-size: 40px;  
-    }
-
-    #contentRight{
-        font-size: 35px;
-    }
-    .contactLink{
-        width: 40px;
-    }
-}
-
-@media(max-width: 2560px){
-    #contentLeft,#contentRight{
-        margin-top: 5%;
-    }
-
-    #contentLeft{
-        font-size: 35px;  
-    }
-
-    #contentRight{
-        font-size: 30px;
-    }
-    .contactLink{
-        width: 30px;
-    }
-}
-
-@media(max-width: 1920px){
-    #contentLeft,#contentRight{
-        margin-top: 1%;
-    }
-
-    #contentLeft{
-        font-size: 25px;  
-    }
-
-    #contentRight{
-        font-size: 20px;
-    }
-    .contactLink{
-        width: 25px;
-    }
-}
-
-@media(max-width: 1280px){
-    #contentLeft,#contentRight{
-        margin-top: 7%;
-    }
-
-    #contentLeft{
-        font-size: 25px;  
-    }
-
-    #contentRight{
-        font-size: 20px;
-        margin-left: 50%;
-    }
-    .contactLink{
-        width: 30px;
-    }
-}
-
-@media(max-width: 850px){
-    #contentLeft,#contentRight{
-        margin-top: 10%;
-    }
-
-    #contentLeft{
-        font-size: 25px;  
-    }
-
-    #contentRight{
-        font-size: 20px;
-        margin-left: 50%;
-    }
-    .contactLink{
-        width: 25px;
-    }
-}
-
-@media(max-width: 750px){
-    #contentLeft,#contentRight{
-        margin-top: 15%;
-    }
-    #contentRight{
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 650px){
-    #contentLeft,#contentRight{
-        margin-top: 15%;
-        width: 100%;
-    }
-
-    #contentLeft{
-        margin-top: 20%;
-        font-size: 25px;  
-    }
-
-    #contentRight{
-        font-size: 20px;
-        margin-left: 30%;
-    }
-    .contactLink{
-        width: 25px;
-    }
-}
-
-@media(max-width: 500px){
-    #contentLeft,#contentRight{
-        margin-top: 15%;
-        width: 100%;
-    }
-
-    #contentLeft{
-        margin-top: 20%;
-        font-size: 20px;  
-    }
-
-    #contentRight{
-        font-size: 15px;
-        margin-left: 20%;
-    }
-    .contactLink{
-        width: 20px;
-    }
-}
-
-@media(max-width: 350px){
-    #contentLeft,#contentRight{
-        margin-top: 15%;
-        width: 100%;
-    }
-
-    #contentLeft{
-        margin-top: 25%;
-        font-size: 20px;  
-    }
-
-    #contentRight{
-        font-size: 12px;
-        margin-left: 15%;
-    }
-    .contactLink{
-        width: 20px;
-    }
 }
