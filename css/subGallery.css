@@ -1,147 +1,13 @@
-/* position of preview image div and arrows*/
-#imgPreview{
-    padding-top: 0vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-#arrows{
-    padding: 1% 0;
-    margin-top: 0vh;
-    display: flex;
-    justify-content: center;
-}
-
-/* position and appearance of arrows*/
-.arrow{
-    position: relative;
-    font-size: 75px;
-    font-style: normal;
-    margin-top: -12.5%;
-    padding: 30vh 25px;
-    color: gray;
-    background-color: rgb(35, 35, 35);
-    background-color: rgba(35, 35, 35, 0.5);
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray,1px -1px 2px gray,-1px 1px 2px gray;
-    cursor: pointer; 
-    overflow: hidden;
-}
-
-.arrow:hover{
-    animation: enlight 1s 1;
-    color: whitesmoke;
-    box-shadow: 1px 1px 5px whitesmoke,-1px -1px 5px whitesmoke;
-    box-shadow:  1px -1px 5px whitesmoke,-1px 1px 5px whitesmoke;
-}
-
-/* animation enlight - box-shadow goes lighter, then goes back*/
-@keyframes enlight{
-    20%{
-        box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
-        box-shadow:  1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
-    }
-    40%{
-        box-shadow: 1px 1px 10px whitesmoke, -1px -1px 10px whitesmoke;
-        box-shadow:  1px -1px 10px whitesmoke, -1px 1px 10px whitesmoke;
-    }
-    60%{
-        box-shadow: 1px 1px 15px white, -1px -1px 15px white;
-        box-shadow:  1px -1px 15px white, -1px 1px 15px white;
-    }
-    80%{
-        box-shadow: 1px 1px 10px whitesmoke, -1px -1px 10px whitesmoke;
-        box-shadow:  1px -1px 10px whitesmoke, -1px 1px 10px whitesmoke;
-    }
-    100%{
-        box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
-        box-shadow:  1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
-    }
-}
-
-/* position of arrowPrevious and arrowNext button*/
-#arrowPrevious{
-    margin-right: 42.5%;
-}
-
-#arrowNext{
-    margin-left: 42.5%;
-}
-
-/* position and appearnace of preview image*/
-#preview{
-    display: flex;
-    justify-content: center;
-    margin-top: -77vh;
-    margin-left: 11%;
-    z-index: 5;
-    width: auto;
-    height: auto;
-    margin-left: 8.5%;
-    margin-right: 8.5%;
-    padding-bottom: 80vh;
-    border: 1px solid whitesmoke;
-    box-shadow: 1px 1px 5px whitesmoke, -1px -1px 5px whitesmoke;
-    box-shadow: 1px -1px 5px whitesmoke, -1px 1px 5px whitesmoke;
-    background-image: url(../images/gallery/sub-gallery1/sub-gallery1_1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-/* position and appearance of removeActive button*/
-#removeActive{
-    position: absolute;
-    top: 0.25%;
-    right: 0.5%;
-    padding: 0px 12px;
-    font-size: 50px;
-    font-style: normal;
-    color: grey;
-    border: 1px solid grey;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 10px;
-}
-
-#removeActive:hover{
-    animation: box 0.5s 1;
-    color: whitesmoke;
-    box-shadow: 2px 2px 5px whitesmoke, 2px -2px 5px whitesmoke;
-    box-shadow: -2px 2px 5px whitesmoke, 2px -2px 5px whitesmoke;
-}
-
-/* animation box - box-shadow circling around*/
-@keyframes box{
-    0%{
-        box-shadow: 2px 2px 5px whitesmoke;
-    }
-    14%{
-        box-shadow: 2px -2px 5px whitesmoke;
-    }
-    38%{
-        box-shadow: -2px -2px 5px whitesmoke;
-    }
-    52%{
-        box-shadow: -2px 2px 5px whitesmoke;
-    }
-    64%{
-        box-shadow: 2px 2px 5px whitesmoke;
-    }
-    78%{
-        box-shadow: 2px -2px 5px whitesmoke;
-    }
-    90%{
-        box-shadow: -2px -2px 5px whitesmoke;
-    }
-    100%{
-        box-shadow: -2px 2px 5px whitesmoke;
-    }
-}
-
 
 /* position and appearance of gallery*/
 #galleryImages{
-    margin-top: 150px;
-    margin-bottom: 0px;
+    margin-top: 12vh;
+    margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -150,37 +16,16 @@
 }
 
 .galleryImg{
-    max-height: 500px;
-    max-width: auto;
-
-    border: 1px solid silver;
+    max-height: clamp(6.25rem, 3.9474rem + 18.4211vw, 50rem);
+    max-width: clamp(6.25rem, 3.9474rem + 18.4211vw, 50rem);;
+    border: 1px solid rgb(150, 150, 150);
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
 }
 
 .vertical{
-    margin: 0 70%;
-}
-
-
-/* lowering margin in bottom of site when too wide*/
-@media(min-width: 800px){
-   #galleryImages{
-       margin-bottom: 25px;
-   }
-}
-
-@media(min-width: 1500px){
-    #galleryImages{
-        margin-bottom: 50px;
-    }
-}
-
-@media(min-width: 2000px){
-    #galleryImages{
-        margin-bottom: 100px;
-    }
+    margin: 5px 70%;
 }
 
 /* preparation for eventListeners in JS*/
@@ -194,188 +39,73 @@
     animation: none;
 }
 
-/* attributes when website is narrowed*/
-@media(max-width: 3840px){
-    #preview{
-        margin-top: -75vh;
-    }
-    .arrow{
-        margin-top: 0vh;
-        font-size: 75px;
-    }
-    #removeActive{
-        font-size: 75px;
-    }
+/* position and appearance of preview image*/
+#preview{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 0.5);
+    margin-top: -5vh;
+    margin-bottom: 2vh;
+    padding: 40vh 0vw;
+    z-index: 5;
+    background-image: url(../images/gallery/sub-gallery1/sub-gallery1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-@media(max-width: 2560px){
-    #preview{
-        margin-top: -76vh;
-    }
-    .arrow{
-        margin-top: -5vh;
-    }
-    #removeActive{
-        font-size: 65px;
-    }
+/* position of arrows*/
+.arrow{
+    position: absolute;
+    font-size: clamp(1.875rem, 1.6447rem + 1.8421vw, 6.25rem);
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.05em 0.5em;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    
+    cursor: pointer; 
+    overflow: hidden;
 }
 
-@media(max-width: 1920px){
-    #preview{
-        margin-top: -77vh;
-    }
-    .arrow{
-        margin-top: -7.5vh;
-    }
-    #removeActive{
-        font-size: 50px;
-    }
-    .galleryImg{
-        max-width: 400px;
-    }
+.arrow:hover{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px black,-1px -1px 5px black;
+    box-shadow:  1px -1px 5px black,-1px 1px 5px black;
 }
 
-@media(max-width: 1280px){
-    #preview{
-        margin-top: -50vh;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .arrow{
-        margin-top: 20vh;
-        padding: 0 20px;
-        font-size: 75px;
-        color: rgb(245, 245, 245);
-        color: rgba(245, 245, 245, 0.75);
-    }
-    #arrowPrevious{
-        margin-right: 40%;
-    }
-    #arrowNext{
-        margin-left: 40%;
-    }
+#arrowPrevious{
+    margin-top: 32vh;
+    left: 7.5vw;
 }
 
-@media(max-width: 900px){
-    #preview{
-        margin-top: -47vh;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-    .arrow{
-        margin-top: 25vh;
-        font-size: 60px;
-    }
-    #arrowPrevious{
-        margin-right: 35%;
-    }
-    #arrowNext{
-        margin-left: 35%;
-    }
-    .galleryImg{
-        max-width: 250px;
-    }
+#arrowNext{
+    margin-top: 32vh;
+    right: 7.5vw;
 }
 
-@media(max-width: 800px){
-    #preview{
-        margin-top: -47vh;
-    }
-    .arrow{
-        margin-top: 25vh;
-        font-size: 60px;
-    }
-    #removeActive{
-        font-size: 40px;
-    }
+/* position and appearance of removeActive button*/
+#removeActive{
+    position: absolute;
+    top: 0%;
+    right: 0.5%;
+    padding: 0px 12px;
+    font-size: clamp(1.875rem, 1.6447rem + 1.8421vw, 6.25rem);
+    font-style: normal;
+    font-weight: bold;
+    border: 0px solid gray;
+    color: grey;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
-@media(max-width: 700px){
-    #preview{
-        margin-top: -44vh;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    .arrow{
-        margin-top: 25vh;
-    }
-    #arrowPrevious{
-        margin-right: 35.5%;
-    }
-    #arrowNext{
-        margin-left: 35.5%;
-    }
+#removeActive:hover{
+    animation: box 0.5s 1;
+    color: white;
 }
-
-@media(max-width: 600px){
-    #preview{
-        margin-top: -45.5vh;
-    }
-    .arrow{
-        margin-top: 30vh;
-        padding: 0 5px;
-        font-size: 45px;
-    }
-}
-
-@media(max-width: 500px){
-    #preview{
-        margin-top: -45vh;
-    }
-    .arrow{
-        margin-top: 30vh;
-    }
-    #arrowPrevious{
-        margin-right: 32%;
-    }
-    #arrowNext{
-        margin-left: 32%;
-    }
-    .galleryImg{
-        max-width: 200px;
-    }
-}
-
-@media(max-width: 400px){
-    #preview{
-        margin-top: -45vh;
-    }
-    .arrow{
-        margin-top: 30vh;
-    }
-    #removeActive{
-        font-size: 35px;
-    }
-}
-
-@media(max-width: 350px){
-    #preview{
-        margin-top: -45vh;
-    }
-    .arrow{
-        margin-top: 30vh;
-    }
-    #arrowPrevious{
-        margin-right: 25%;
-    }
-    #arrowNext{
-        margin-left: 25%;
-    }
-    #removeActive{
-        font-size: 40px;
-    }
-}
-
-@media(max-width: 300px){
-    #preview{
-        margin-top: -45vh;
-    }
-    .arrow{
-        margin-top: 30vh;
-    }
-    #removeActive{
-        font-size: 30px;
-    }
-}
-
-
