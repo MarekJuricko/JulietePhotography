@@ -23,8 +23,6 @@
     box-shadow: 3px 3px 10px gray;
     margin-top: 75px;
     padding: clamp(5vh, 10vh, 15vh);
-    height: 100%;
-    width: 100%;
     background-image: url(../images/main/background10.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
