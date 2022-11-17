@@ -3,7 +3,7 @@
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
 }
 
 footer{
@@ -11,7 +11,7 @@ footer{
     box-shadow: -1px -1px 5px rgb(200, 200, 200);
     padding-top: 15px;
     position: sticky;
-    top: 90%;
+    top: 90vh;
 }
 
 /* appearance of icons */
@@ -25,8 +25,9 @@ footer{
 }
 
 .icons{
-    height: 30px;
-    width: 30px;
+    height: clamp(1.5625rem, 1.4803rem + 0.6579vw, 3.125rem);
+    width: clamp(1.5625rem, 1.4803rem + 0.6579vw, 3.125rem);
+
     list-style: none;
     margin: 0px 50%;
 }
@@ -39,20 +40,20 @@ footer{
 }
 
 #instagram{
-    left: -6%;
+    left: -4.5vw;
 }
 
 #facebook{
-    left: -2%;
+    left: -1.5vw;
 }
 
 #phone{
-    left: 2%;
+    left: 1.25vw;
 }
 
 #email{
-    padding-top: 2.5px;
-    left: 6%;
+    padding-top: 0.5vh;
+    left: 4.25vw;
 }
 
 /* change of icons when hovering */
@@ -75,11 +76,11 @@ footer{
 /* position of bottom info */
 .bottomInfo{
     position: sticky;
-    top: 93%;
+    top: 93vh;
     text-align: center;
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.8553rem + 0.1579vw, 1.25rem);
     color: gray;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .bottomLink{
@@ -96,283 +97,60 @@ footer{
     text-align: center;
 }
 
-
-/* positions of icons,bottom info when width is narrowed */
-@media(max-width: 1000px){
+/* position of icons when screeen is narrowed */
+@media(max-width: 1250px){
     #instagram{
-        left: -7%;
+        left: -7.5vw;
     }
     
     #facebook{
-        left: -2.5%;
+        left: -2.5vw;
     }
     
     #phone{
-        left: 2.5%;
+        left: 2.25vw;
     }
     
     #email{
-        padding-top: 2.5px;
-        left: 7%;
-    }
-
-    .bottomInfo{
-        left: 43.5%;
-    }
-}
-
-@media(max-width: 800px){
-    #instagram{
-        left: -9%;
-    }
-    
-    #facebook{
-        left: -3%;
-    }
-    
-    #phone{
-        left: 3%;
-    }
-    
-    #email{
-        padding-top: 2.5px;
-        left: 9%;
-    }
-
-    .bottomInfo{
-        left: 42%;
+        padding-top: 0.5vh;
+        left: 7.25vw;
     }
 }
 
 @media(max-width: 650px){
     #instagram{
-        left: -10%;
+        left: -9.5vw;
     }
     
     #facebook{
-        left: -3.5%;
+        left: -3.5vw;
     }
     
     #phone{
-        left: 3.5%;
+        left: 3.25vw;
     }
     
     #email{
-        padding-top: 2.5px;
-        left: 10%;
-    }
-
-    .bottomInfo{
-        left: 41%;
+        padding-top: 0.5vh;
+        left: 9.25vw;
     }
 }
 
-@media(max-width: 550px){
+@media(max-width: 500px){
     #instagram{
-        left: -12%;
+        left: -15.5vw;
     }
     
     #facebook{
-        left: -4%;
+        left: -5.5vw;
     }
     
     #phone{
-        left: 4%;
+        left: 5.25vw;
     }
     
     #email{
-        padding-top: 2.5px;
-        left: 12%;
-    }
-
-    .bottomInfo{
-        left: 39%;
-    }
-}
-
-@media(max-width: 450px){
-    .bottomInfo{
-        left: 36%;
-    }
-}
-
-@media(max-width: 400px){
-    #instagram{
-        left: -15%;
-    }
-    
-    #facebook{
-        left: -5%;
-    }
-    
-    #phone{
-        left: 5%;
-    }
-    
-    #email{
-        padding-top: 2.5px;
-        left: 15%;
-    }
-
-    .bottomInfo{
-        left: 34%;
-    }
-}
-
-@media(max-width: 350px){
-    #instagram,#facebook,#phone,#email{
-        top: 1%;
-    }
-
-    #instagram{
-        left: -20%;
-    }
-    
-    #facebook{
-        left: -7%;
-    }
-    
-    #phone{
-        left: 7%;
-    }
-    
-    #email{
-        padding-top: 2.5px;
-        left: 20%;
-    }
-
-    .bottomInfo{
-        top: 92%;
-        left: 28%;
-    }
-}
-
-
-/* positions of icons,bottom info when width is wider */
-@media(min-width: 1000px){
-    .bottomInfo{
-        left: 44%;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 1100px){
-    .bottomInfo{
-        left: 44%;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 1200px){
-    .bottomInfo{
-        left: 44.5%;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 1400px){
-    .bottomInfo{
-        left: 45.25%;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 1600px){
-    .bottomInfo{
-        left: 46%;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 1700px){
-    .bottomInfo{
-        left: 46%;
-        font-size: 16px;
-    }
-}
-
-@media(min-width: 1800px){
-    .icons{
-        height: 35px;
-        width: 35px;
-    }
-
-    .bottomInfo{
-        left: 46%;
-        font-size: 17px;
-    }
-}
-
-@media(min-width: 1900px){
-    .icons{
-        height: 35px;
-        width: 35px;
-    }
-
-    .bottomInfo{
-        left: 46%;
-        font-size: 18px;
-    }
-}
-
-@media(min-width: 2000px){
-    .icons{
-        height: 35px;
-        width: 35px;
-    }
-
-    .bottomInfo{
-        left: 46%;
-        font-size: 19px;
-    }
-}
-
-@media(min-width: 2100px){
-    .icons{
-        height: 40px;
-        width: 40px;
-    }
-
-    .bottomInfo{
-        left: 46%;
-        font-size: 20px;
-    }
-}
-
-@media(min-width: 2400px){
-    .icons{
-        height: 40px;
-        width: 40px;
-    }
-
-    .bottomInfo{
-        margin-top: 50px;
-        left: 46.5%;
-        font-size: 20px;
-    }
-}
-
-@media(min-width: 2800px){
-    .icons{
-        height: 50px;
-        width: 50px;
-    }
-
-    .bottomInfo{
-        margin-top: 75px;
-        left: 46.5%;
-        font-size: 22px;
-    }
-}
-
-@media(min-width: 3500px){
-    .icons{
-        height: 60px;
-        width: 60px;
-    }
-
-    .bottomInfo{
-        left: 46.5%;
-        font-size: 30px;
+        padding-top: 0.5vh;
+        left: 15.25vw;
     }
 }
